@@ -1,4 +1,11 @@
 <template>
     <div>Hello World!</div>
     <div>My Full Name is {fullname}</div>
+    <lightning-card  title="Two Way Data Binding">
+        <div class="slds-m-around_medium">
+            <lightning-input type="text" onkeyup={changeHandler}>
+            </lightning-input>
+            <div>The {course} is a training for {title}</div>
+        </div>
+    </lightning-card>
 </template>
